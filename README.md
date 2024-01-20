@@ -2,6 +2,7 @@
 
 ## Overview
 This application is designed to manage and analyze fire incident data from https://data.sfgov.org/ . It uses a Python script to load data into a MySQL database and provides an interface through phpMyAdmin for data visualization, management and reporting.
+Link to Github Project: https://github.com/GuiBo79/karly-book.git
 
 ## Prerequisites
 - Docker
@@ -31,6 +32,8 @@ This application is designed to manage and analyze fire incident data from https
 ### Accessing phpMyAdmin
 - Once the services are up and running, phpMyAdmin can be accessed at `http://localhost:8080` (or the appropriate host and port based on your configuration).
 - Log in using the MySQL credentials specified in your `docker-compose.yml` file.
+- Default user: "user"
+- Default password: "password"
 
 ### Using the Application
 - The application will load data into the MySQL database and create views for analyzing fire incidents that can be exported using the UI to create reports.
