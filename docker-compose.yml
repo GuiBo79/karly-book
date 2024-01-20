@@ -30,6 +30,7 @@ services:
     build: ./app
     depends_on:
       - db
+      - phpmyadmin
     volumes:
       - ./app:/app
     environment:

@@ -1,14 +1,9 @@
 SHELL := /bin/bash
 
-.PHONY: build-db up app run
+.PHONY: install app
 
-build-db:
-	docker-compose build db
-
-build-php:
-	docker-compose build phpmyadmin
+install:
+	docker-compose up
 
 app:
 	docker-compose up app
-
-install: build-db build-php app
