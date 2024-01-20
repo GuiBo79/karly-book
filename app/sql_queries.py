@@ -1,5 +1,5 @@
 SUMMARY_INCIDENTS = """
-CREATE VIEW summary_incidents AS
+CREATE OR REPLACE VIEW summary_incidents AS
 SELECT
     `fire_incidents_data`.neighborhood_district,
     COUNT(*) AS total_incidents
@@ -13,7 +13,7 @@ DESC;
 """
 
 INCIDENTS_DETAILS = """
-CREATE VIEW grave_incidents_details AS
+CREATE OR REPLACE VIEW grave_incidents_details AS
 SELECT 
     incident_number,
     address,

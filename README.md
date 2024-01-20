@@ -12,8 +12,8 @@ This application is designed to manage and analyze fire incident data. It uses a
 ### Setting Up the Environment
 1. **Clone the Repository**:
    ```bash
-   git clone [repository URL]
-   cd [karly-book]
+   git clone git@github.com:GuiBo79/karly-book.git
+   cd karly-book
    ```
 
 2. **Build and Run the Application**:

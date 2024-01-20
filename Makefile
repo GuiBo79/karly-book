@@ -5,10 +5,10 @@ SHELL := /bin/bash
 build-db:
 	docker-compose build db
 
-up:
-	docker-compose up --build
+build-php:
+	docker-compose build phpmyadmin
 
 app:
 	docker-compose up app
 
-run: build-db up app
+install: build-db build-php app
