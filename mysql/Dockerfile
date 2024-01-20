@@ -1,0 +1,8 @@
+FROM mysql:latest
+
+ENV MYSQL_DATABASE=fire_incidents
+ENV MYSQL_ROOT_PASSWORD=root
+ENV MYSQL_USER=user
+ENV MYSQL_PASSWORD=password
+
+
